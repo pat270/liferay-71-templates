@@ -1,0 +1,27 @@
+// `main.scss` is the file that imports all Theme related CSS. This file is 
+// included in Portal's `<head></head>` tag as `theme-name/css/main.css`.
+
+// Imports Bourbon Sass mixin Library, Liferay Global Sass mixins, 
+// Clay/Bootstrap Sass Functions + Variables + Mixins. You can import any custom
+// mixins at the bottom of this file.
+@import "imports";
+
+// The files below style Liferay Portal specific markup.
+@import "base";
+
+@import "portal";
+
+@import "taglib";
+
+@import "application";
+
+@import "layout";
+
+@import "navigation";
+
+@import "portlet";
+
+@import "extras";
+
+// Imports your theme's custom CSS
+@import "custom";

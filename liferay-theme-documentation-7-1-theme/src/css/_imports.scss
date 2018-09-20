@@ -1,0 +1,32 @@
+// Imports Bourbon Sass mixin Library, Liferay Global Sass mixins, 
+// Clay/Bootstrap Sass Functions + Variables + Mixins. You can import any custom
+// mixins at the bottom of this file. This file is imported in the theme's
+// `main.scss`.
+
+@import "bourbon";
+
+@import "mixins";
+
+
+// Styled Theme:
+// @import "bourbon";
+
+// @import "mixins";
+
+// @import "compat/mixins";
+
+// @import "clay/base-variables";
+
+
+// Classic Theme:
+// Not sure why _clay_custom.scss is imported again here. This file is imported in
+// clay.scss.
+// @import "clay_custom";
+
+// @import "bourbon";
+
+// @import "mixins";
+
+// @import "compat/mixins";
+
+// @import "clay/atlas-variables";
