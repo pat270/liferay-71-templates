@@ -1,0 +1,21 @@
+// DO NOT USE
+// `_liferay_variables.scss` contains Sass variables related to Liferay Specific
+// components. Don't use this file. If you want to change the variable values 
+// in here put them in _clay_variables.scss. This file is imported at the bottom
+// of `clay/base.scss`, `clay/base-variables.scss`, `clay/atlas.scss`,
+// `clay/atlas-variables.scss`, and `clay/bootstrap.scss`.
+
+$status-approved-border: map-get($theme-colors, success) !default;
+$status-approved-text: map-get($theme-colors, success) !default;
+
+$status-denied-border: map-get($theme-colors, danger) !default;
+$status-denied-text: map-get($theme-colors, danger) !default;
+
+$status-expired-border: map-get($theme-colors, warning) !default;
+$status-expired-text: map-get($theme-colors, warning) !default;
+
+$status-pending-border: map-get($theme-colors, info) !default;
+$status-pending-text: map-get($theme-colors, info) !default;
+
+$status-scheduled-border: map-get($theme-colors, info) !default;
+$status-scheduled-text: map-get($theme-colors, info) !default;

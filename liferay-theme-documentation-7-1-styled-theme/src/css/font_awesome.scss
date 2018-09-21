@@ -1,0 +1,9 @@
+// `font_awesome.scss` is the file that imports Font Awesome. This file is 
+// imported as a CSS Import inside `clay/base.scss` and `clay/atlas.scss`. 
+// Leave this file blank or comment out the lines if you don't want Font Awesome
+// to be loaded, it will  cause some icons to be missing in out of the box
+// Widgets.
+
+$FontAwesomePath: "font-awesome/font";
+
+@import "font-awesome/scss/font-awesome";

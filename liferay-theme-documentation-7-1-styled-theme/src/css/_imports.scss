@@ -1,0 +1,13 @@
+// Imports Bourbon Sass mixin Library, Liferay Global Sass mixins, 
+// Clay/Bootstrap Sass Functions + Variables + Mixins. You can import any custom
+// mixins at the bottom of this file. This file is imported in the theme's
+// `main.scss`.
+
+@import "bourbon";
+
+@import "mixins";
+
+// Imports Lexicon CSS Mixins and Bootstrap 3 Mixins
+@import "compat/mixins";
+
+@import "clay/base-variables";
