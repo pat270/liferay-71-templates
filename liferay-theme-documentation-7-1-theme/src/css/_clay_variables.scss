@@ -1,4 +1,7 @@
 // `_clay_variables.scss` is a placeholder for all your Clay CSS,
 // Bootstrap CSS, Liferay Theme variable overwrites. Put all your variables in
-// here. This file is imported in `clay/base.scss`, `clay/base-variables.scss`,
-// `clay/atlas.scss`, `clay/atlas-variables.scss`, and `clay/bootstrap.scss`.
+// here. If you are worried about variable naming collisions between Clay CSS
+// and your theme feel free to make a separate Sass partial and import it at the
+// top of `_custom.scss`. This file is imported in `clay/base.scss`,
+// `clay/base-variables.scss`, `clay/atlas.scss`, `clay/atlas-variables.scss`,
+// and `clay/bootstrap.scss`.
