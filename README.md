@@ -2,7 +2,11 @@ Make sure [generator-liferay-theme](https://github.com/liferay/liferay-themes-sd
 
 ## Liferay Theme Documentation 7.1 Theme
 
-> Liferay Theme Documentation 7.1 Theme is a copy of Liferay Portal's 7.1 Unstyled Theme, with comments describing the purpose of each file. Don't deploy and use this theme, things will be broken and be hard to undo via the browser.
+> Liferay Theme Documentation 7.1 Theme is a copy of Liferay Portal's 7.1 Unstyled Theme, with comments describing the purpose of each file. Don't deploy and use this theme, things will be broken and be hard to undo via the browser. This theme should only be used as a reference.
+
+## Liferay Theme Documentation 7.1 Styled Theme
+
+> Liferay Theme Documentation 7.1 Styled Theme is a copy of Liferay Portal's 7.1 Styled Theme, with comments describing the purpose of each file. This theme should only be used as a reference. It includes all files that are bundled together when deploying the Styled Theme.
 
 ## Liferay 7.1 Theme Inheritance
 
