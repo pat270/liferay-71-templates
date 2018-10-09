@@ -1,0 +1,7 @@
+$portlet-content-border-radius: $border-radius !default;
+
+$portlet-title-text: () !default;
+$portlet-title-text: map-merge((
+	margin-bottom: calc((2rem - (1em * 1.25)) / 2),
+	margin-top: calc((2rem - (1em * 1.25)) / 2)
+), $portlet-title-text);

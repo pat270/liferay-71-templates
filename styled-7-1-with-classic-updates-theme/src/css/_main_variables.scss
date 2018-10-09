@@ -1,0 +1,54 @@
+// Uncomment variables below for Classic Theme
+
+// $portlet-topper-bg: #F0F5FF !default;
+// $portlet-topper-border: #80ACFF !default;
+// $portlet-topper-color: $primary !default;
+// $portlet-topper-link-color: $primary !default;
+// $portlet-topper-link-hover-color: $primary !default;
+
+// $portlet-content-border-radius: 0 0 8px 8px !default;
+// $portlet-topper-border-radius: 8px 8px 0 0 !default;
+
+// $portlet-decorate-bg: #FFF !default;
+
+// $portlet-header-margin-bottom: map-get($spacers, 5) !default;
+
+// $portlet-title-text: () !default;
+// $portlet-title-text: map-merge((
+// 	color: $secondary,
+// 	font-size: 0.875rem,
+// 	text-transform: uppercase
+// ), $portlet-title-text);
+
+// $banner-bg: $white !default;
+// $banner-border-color: lighten(saturate(adjust-hue($secondary, 3), 6.13), 46.08) !default;
+
+// $navbar-classic: () !default;
+// $navbar-classic: map-merge((
+// 	color: $body-color,
+// 	link-color: $secondary,
+// 	link-active-color: $body-bg,
+// 	link-disabled-color: lighten(saturate(adjust-hue($secondary, 3), 6.13), 46.08),
+// ), $navbar-classic);
+
+// $user-full-name-link: () !default;
+// $user-full-name-link: map-merge((
+// 	color: $secondary,
+// 	hover-color: darken($secondary, 15%)
+// ), $user-full-name-link);
+
+// $user-sign-in-link: () !default;
+// $user-sign-in-link: map-merge((
+// 	color: $secondary,
+// 	hover-color: darken($secondary, 15%)
+// ), $user-sign-in-link);
+
+// $footer-bg: #30313F !default;
+// $footer-color: $white !default;
+// $footer-height: 7.375rem !default;
+
+// $footer-link: () !default;
+// $footer-link: map-merge((
+// 	color: $light,
+// 	hover-color: darken($light, 10%)
+// ), $footer-link);

@@ -1,0 +1,10 @@
+.portlet-decorate {
+	.portlet {
+		margin-bottom: 1.5rem;
+	}
+
+	.portlet-content {
+		border-radius: $portlet-content-border-radius;
+		padding: 1.5rem;
+	}
+}

@@ -1,0 +1,196 @@
+$control-menu-height: 3.5rem !default;
+$control-menu-height-mobile: 3.0625rem !default;
+
+$product-menu-width: 320px !default;
+
+$banner-bg: $white !default;
+$banner-border-color: $gray-400 !default;
+$banner-border-width: 0 0 0.0625rem 0 !default;
+
+$navbar-classic: () !default;
+$navbar-classic: map-merge((
+	link-color: $secondary,
+	link-font-weight: $font-weight-semi-bold,
+	link-active-color: $body-bg,
+	link-disabled-color: lighten(saturate(adjust-hue($secondary, 3), 6.13), 46.08),
+), $navbar-classic);
+
+$user-full-name-link: () !default;
+$user-full-name-link: map-merge((
+	color: $secondary,
+	font-weight: $font-weight-semi-bold,
+	hover-color: darken($secondary, 15%)
+), $user-full-name-link);
+
+$user-sign-in-link: () !default;
+$user-sign-in-link: map-merge((
+	color: $secondary,
+	font-weight: $font-weight-semi-bold,
+	hover-color: darken($secondary, 15%),
+	hover-text-decoration: none
+), $user-sign-in-link);
+
+$footer-bg: $dark !default;
+$footer-color: $white !default;
+$footer-height: 118px !default;
+$footer-height-mobile: null !default;
+
+$footer-link: () !default;
+$footer-link: map-merge((
+	color: $light,
+	font-weight: $font-weight-semi-bold,
+	hover-color: darken($light, 10%),
+	hover-text-decoration: none,
+), $footer-link);
+
+// Footer always on bottom
+
+html {
+	height: 100%;
+}
+
+body {
+	&, > .flipped {
+		height: 100%;
+	}
+}
+
+#wrapper {
+	margin-bottom: math-sign($footer-height);
+	min-height: 100%;
+	padding-bottom: $footer-height;
+	padding-top: 0;
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: math-sign($footer-height-mobile);
+		padding-bottom: $footer-height-mobile;
+	}
+}
+
+#content {
+	padding-bottom: 1rem;
+}
+
+#footer {
+	background-color: $footer-bg;
+	color: $footer-color;
+	margin-left: 0;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	position: relative;
+}
+
+.footer-link {
+	@include clay-link($footer-link);
+}
+
+.sidenav-transition #footer {
+	transition: margin 0.5s ease;
+}
+
+.has-control-menu {
+	height: calc(100% - #{$control-menu-height});
+
+	@include media-breakpoint-down(sm) {
+		height: calc(100% - #{$control-menu-height-mobile});
+	}
+
+	&.open {
+		#footer {
+			@include media-breakpoint-up(sm) {
+				margin-left: $product-menu-width;
+			}
+		}
+	}
+}
+
+// Banner
+
+#banner {
+	background-color: $banner-bg;
+	border-color: $banner-border-color;
+	border-style: solid;
+	border-width: $banner-border-width;
+	margin-bottom: 1.5rem;
+
+	.portlet.open, .portlet:hover, .portlet.focus {
+		> .portlet-topper {
+			z-index: 994;
+		}
+	}
+
+	.portlet-search-bar {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 0.75rem;
+			width: 100%;
+		}
+	}
+
+	.portlet-user-personal-bar {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 0.75rem;
+		}
+	}
+}
+
+.navbar-classic {
+	@include clay-navbar-variant($navbar-classic);
+
+	.nav-link {
+		margin-right: 1rem;
+	}
+}
+
+.user-personal-bar {
+	.logo {
+		color: $headings-color;
+
+		&:hover {
+			color: $headings-color;
+			text-decoration: none;
+		}
+	}
+
+	.logo-site-name {
+		display: inline-block;
+		font-size: $h2-font-size;
+		font-weight: $font-weight-bold;
+		margin-bottom: 0;
+		margin-right: 0.5rem;
+		vertical-align: middle;
+	}
+
+	.portlet {
+		margin-bottom: 0;
+	}
+
+	a.sign-in {
+		@include clay-link($user-sign-in-link);
+	}
+
+	.user-avatar-link {
+		> a {
+			display: inline-block;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.user-avatar-image {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.user-full-name {
+		@include clay-link($user-full-name-link);
+
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.search-bar-simple .search-bar-keywords-input-wrapper {
+	margin-left: 0;
+}
